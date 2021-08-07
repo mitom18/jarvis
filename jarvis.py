@@ -48,4 +48,9 @@ async def joke(ctx: commands.Context):
     await ctx.send(embed=embed)
 
 
-bot.run(config["DISCORD_BOT_TOKEN"])
+def main():
+    bot.run(config["DISCORD_BOT_TOKEN"])
+
+
+if __name__ == '__main__':
+    main()
