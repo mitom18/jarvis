@@ -1,3 +1,5 @@
+#!/bin/bash
+
 if [ -e ./temp ]
 then
   pid=`cat temp`
