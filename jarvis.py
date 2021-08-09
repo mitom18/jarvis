@@ -56,7 +56,7 @@ async def weather(ctx: commands.Context):
     color = random.randint(0, 0xFFFFFF)
     embed = discord.Embed(
         title="Today weather in Prague", description=weather_info, color=color)
-    embed.set_footer(f'Source: {WEATHER_API_BASE_URL}/{city}')
+    embed.set_footer(text=f'Source: {WEATHER_API_BASE_URL}/{city}')
     await ctx.send(embed=embed)
 
 
