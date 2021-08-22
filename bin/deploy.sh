@@ -1,10 +1,7 @@
 #!/bin/bash
 
-start_file='start.sh'
-start_script="$(cd $(dirname \"$start_file\"); pwd)/$(basename $start_file)"
-
-stop_file='stop.sh'
-stop_script="$(cd $(dirname \"$stop_file\"); pwd)/$(basename $stop_file)"
+start_script="bin/start.sh"
+stop_script="bin/stop.sh"
 
 /bin/bash $stop_script
 
