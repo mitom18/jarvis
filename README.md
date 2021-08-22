@@ -14,9 +14,12 @@ You can run the bot on background with shell scripts located in the `bin` direct
 
 # Stop the running bot.
 ./bin/stop.sh
+
+# Deploy the newest bot version from GitHub (requires SSH connection to this repo).
+./bin/deploy.sh
 ```
 
-Or you can just simply run the main `jarvis.py` file via Python 3.9 or higher.
+Or you can just simply run the main `jarvis.py` file with Python 3.9 or higher.
 
 ```
 python3 jarvis.py
